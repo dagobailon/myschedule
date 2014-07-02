@@ -1,0 +1,22 @@
+<html> 
+
+<head>
+
+<title> These are all the Teachers!! </title>
+
+</head>
+
+<body>
+These are all the teachers that will be in a instructing a course.
+
+{% for teacher in all_teachers %}
+	
+	<div><a href="{url('teacher', teacher.id)">{{ teacher.first_name }} {{ teacher.last_name }}</a></div>
+
+{% endfor %}
+
+
+</body>
+
+
+</html>
